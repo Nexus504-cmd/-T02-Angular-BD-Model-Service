@@ -14,5 +14,9 @@ export class App {
   private autor: Autor[] = [];
   constructor(private autorservice : AutorService){}
 
+  this.autorService.getAutores().subscribe(data => {
+    console.log(data);
+});
+
   
 }
