@@ -1,5 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AutorService } from './services/autor-service';
+import { Autor } from './model/autor';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular_bd');
+  
+  private autor: Autor[] = [];
+  constructor(private autorservice : AutorService){}
+
+  
 }
