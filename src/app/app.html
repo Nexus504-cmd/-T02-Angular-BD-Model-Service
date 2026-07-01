@@ -1,14 +1,23 @@
-<table border="1">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th>Año Nacimiento</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-  </tbody>
+ <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Año Nacimiento</th>
+      </tr>
 
-</table>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of autores()">
+        <td>{{v.id_autor}}</td>
+        <td>{{v.nombre}}</td>
+        <td>{{v.apellido}}</td>
+        <td>{{v.anio_nacimiento}}</td>
+      </tr>
+    </tbody>
+
+
+  </table>
+
+<!--  -->

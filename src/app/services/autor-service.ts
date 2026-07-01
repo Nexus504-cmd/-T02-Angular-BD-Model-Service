@@ -11,6 +11,7 @@ export class AutorService {
   constructor(private http: HttpClient){}
 
   getAutor():Observable<Autor[]>{
+    console.log(this.http.get<Autor[]>(this.url));
     return this.http.get<Autor[]>(this.url);
   }
 
